@@ -1,9 +1,10 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
-import "@openzeppelin/contracts/access/Ownable.sol";
+// import Openzeppelin Ownable contract
 
-contract Assignment9 is Ownable {
+// inherit from Ownable contract 
+contract Assignment9 {
     // create a public array called `deployedContracts` to store contracts addresses in it 
 
     // call Ownable constructor of openzeppelin contract
@@ -23,6 +24,10 @@ contract Assignment9 is Ownable {
 // Simple contract to be deployed by the factory
 contract SimpleContract {
     uint256 public value;
+
+    constructor(uint256 _initialValue) {
+        value = _initialValue;
+    }
 
     function setValue(uint256 newValue) external {
         value = newValue;
