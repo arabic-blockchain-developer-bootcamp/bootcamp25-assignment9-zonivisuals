@@ -16,6 +16,8 @@ contract Assignment9 {
     // make only the owner is the one who can call this function
     function createContract() external {
         // deploy new instance of SimpleContract
+            // Hint: When you create a new instance, do not forget to pass any arbitrary initial value in the constructor
+        
 
         // push the new deployed instance to deployedContracts array
     }
